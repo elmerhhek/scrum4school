@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum im Unterricht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Scrum im Unterricht</h1>
+    <nav>
+        <ul>
+            <li><a href="#" data-ritual="sprint-planning">Sprint Planning</a></li>
+            <li><a href="#" data-ritual="daily-scrum">Daily Scrum</a></li>
+            <li><a href="#" data-ritual="sprint-review">Sprint Review</a></li>
+            <li><a href="#" data-ritual="sprint-retrospective">Sprint Retrospektive</a></li>
+            <li><a href="#" data-ritual="glossar">Scrum Glossar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="ritual-content">
+    <section id="default-text" class="ritual-section active">
+        <h2>Herzlich Willkommen!</h2>
+        <p>Diese Website dient als "interaktive Zentrale" für Unterricht, der nach Scrum-Prinzipien gestaltet ist. Sie bietet für jedes Scrum-Ritual eine klare Übersicht über die jeweiligen Aktivitäte und Abläufe und integriert einen dynamischen Timer zur optimalen Zeitsteuerung der Aktivitäten. Ziel ist es, den Scrum-Prozess für Schülerinnen und Schüler transparent und nachvollziehbar zu gestalten und so ein effektives, agiles Lernen zu unterstützen.</p>
+    </section>
+</main>
+
+<div id="timer-container">
+    <div id="timer-display">15:00</div>
+    <div id="timer-controls">
+        <button id="start-stop-timer">Start</button>
+        <button id="reset-timer">Reset</button>
+        <input type="number" id="timer-minutes" value="15" min="1"> Minuten
+        <button id="set-timer-15">15 Min</button>
+        <button id="set-timer-45">45 Min</button>
+        <button id="timer-plus-5">+5 Min</button>
+        <button id="timer-minus-5">-5 Min</button>
+    </div>
+</div>
+
+<audio id="timer-gong" src="gong.mp3" preload="auto"></audio> <footer>
+    <p>&copy; 2025 Kevin Elmer | Heinrich-Hertz-Europakolleg Bonn</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
